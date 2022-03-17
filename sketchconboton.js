@@ -5,8 +5,8 @@ var btn;
 }
 
   function setup() {
-  createCanvas(400, 400);
-  frameRate(20);
+  createCanvas(windowWidth, windowHeight);
+  frameRate(30);
   background(0,0,255);
   btn=createButton('descargar');
   btn.position (20,20);
@@ -14,10 +14,9 @@ var btn;
   }
 
   function draw() {
-    fill (random(0,255),random(0,255),0);
+    fill (random(0,255),random(0,255),random(0,255));
     circle (mouseX, mouseY,15);
-    blendMode(LIGHTEST);
-    line(100, 100, 400, 400)
+    line(100, 100, 400, 400);
 
 }
 
